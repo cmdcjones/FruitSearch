@@ -1,0 +1,19 @@
+body {
+    background-image: repeating-linear-gradient(red, yellow 20%, green 40%);
+}
+
+
+.container {
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar {
+    width: 400px;
+    height: 23px;
+    border: 5px;
+    border-radius: 3px;
+}
+
