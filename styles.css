@@ -17,3 +17,23 @@ body {
     border-radius: 3px;
 }
 
+#resultsDropdown {
+    display: none;
+    position: absolute;
+    border: 1px solid #ff0000;
+    background-color: #e97110;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 402px;
+    z-index: 1;
+  }
+
+.dropdown-item {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+
+.dropdown-item:hover {
+    background-color: #cebb12;
+  }
