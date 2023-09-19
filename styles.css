@@ -1,5 +1,5 @@
 body {
-    background-image: repeating-linear-gradient(red, yellow 20%, green 40%);
+    background-image: linear-gradient(red 30%, yellow 80%);
 }
 
 
@@ -13,8 +13,9 @@ body {
 .searchBar {
     width: 400px;
     height: 23px;
-    border: 5px;
+    border: 2px solid orangered;
     border-radius: 3px;
+    background-color: rgba(10,0,0,0.2);
 }
 
 #resultsDropdown {
