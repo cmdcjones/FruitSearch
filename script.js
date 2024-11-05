@@ -3,12 +3,14 @@ const inputElement = form.querySelector("input");
 const dropdownElement = form.querySelector("#resultsDropdown")
 
 
-const results = ['Apple', 'Banana', 'Strawberry', 'Kiwi', 'Grape', 'Mango',
+// USE A FUCKING CONSTANT
+const RESULTS_ARRAY = ['Apple', 'Banana', 'Strawberry', 'Kiwi', 'Grape', 'Mango',
 'Lemon', 'Papaya', 'Orange', 'Peach', 'Grapefruit', 'Tomato'];
 
-const Search = () => {
+// ?
+const search = () => {
     const searchTerm = inputElement.value.toLowerCase();
-    const filteredResults = results.filter(fruit => fruit.toLowerCase().includes(searchTerm));
+    const filteredResults = RESULTS_ARRAY.filter(fruit => fruit.toLowerCase().includes(searchTerm));
 
     dropdownElement.innerHTML = '';
 
@@ -34,8 +36,9 @@ const Search = () => {
     console.log(filteredResults);
 }
 
+// ?
 const theEvent = inputElement.addEventListener('input', function(e){
-    Search();
+    search();
     console.log(e);
 });
 
